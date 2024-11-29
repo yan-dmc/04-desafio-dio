@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de nível de herói</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="icon" type="image/pkm-icon" href="icon.png">
+</head>
+<body>
+    <section class="main">
+        <div class="hero-box">
+            <div class="hero-img">
+                <div class="hero-nametag"></div>
+                <img class="hero-img-img" src="Imagens/default.png" alt="link">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="hero-info">
+                <div class="hero-info-name">
+                    <p class="hero-name">
+                        O‎ ‎ Herói‎ ‎ de‎ ‎ nome 
+                    <input type="text" id="hero-name" placeholder="texto aqui" maxlength="10" 
+                    >
+                </p>
+                </div>
+
+                <div class="hero-info-age">
+                    <p class="hero-age">
+                        Idade ‎ do‎ ‎ Herói 
+                        <input type="number" class="idade input-number" id="hero-name" placeholder="número" max="100" min="0"
+                        >
+                    </p> 
+                </div>
+
+                <div class="hero-info-type">
+                    <p class="hero-type">
+                        Classe
+                        <select name="classes" id="classes">
+                            <option hidden></option>
+
+                            <option value="Guerreiro">Guerreiro</option>
+                            <option value="Mago">Mago</option>
+                            <option value="Monge">Monge</option>
+                            <option value="Ninja">Ninja</option>
+                        </select>
+                    </p>
+                </div>
+
+                <div class="atk-bottom">
+                    <div class="bottom-box" onclick="ataque()">Ataque</div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">©2024. Designed by YAN</div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

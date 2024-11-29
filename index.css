@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: inherit;
+    border: none;
+    font-family: 'pixel', Courier, monospace;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(./Imagens/fonte1.ttf);
+}
+
+body {
+    background: radial-gradient(circle, rgba(15,15,15,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.hero-box {
+    width: 60%;
+    position: relative;
+}
+
+.box {
+    width: 30%;
+    height: 30vh;
+    display: flex;
+    position: relative;
+    background-color: rgb(75, 75, 75);
+    justify-content: center;
+    top: calc(50vh);
+    margin-right: 10vh;
+    font-size: 3vh;
+    border-radius: 2vh;
+    overflow: hidden;
+
+    -webkit-box-reflect: below 1vh linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2));
+
+    
+}
+
+.hero-img {
+    position: absolute;
+    top: 20vh;
+    pointer-events: none;
+}
+
+.hero-nametag {
+    display: flex;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: -5vh;
+    left: 20vh;
+    padding: 0 0 0 .7vh;
+    justify-content: center;
+    position: absolute;
+    font-size: 4vh;
+}
+
+.hero-img img {
+    width: 60vh;
+    transform: scaleX(1);
+    pointer-events: none;
+}
+
+.hero-info {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0vh 2vh 0vh 2vh;
+}
+
+.hero-info-name {
+    display: flex;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.hero-name {
+    background-color: transparent;
+    width: 100%;
+    font-size: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#hero-name {
+    color: rgb(139, 255, 139);
+    width: 100%;
+    font-size: 3vh;
+    border: none;
+    outline: none;
+}
+
+.hero-age {
+    background-color: transparent;
+    width: 100%;
+    font-size: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.input-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.hero-type {
+    background-color: transparent;
+    width: 100%;
+    font-size: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#classes {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 3vh;
+    border: none;
+    outline: none;
+}
+
+#classes option {
+    background-color: #000000;
+}
+
+.bottom-box {
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+.bottom-box:hover {
+    color: hsl(0, 0%, 80%);
+}
+
+.footer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    color: hsl(0, 0%, 50%);
+    justify-content: center;
+    width: 30vh;
+    height: 3.5vh;
+    font-size: 2vh;
+    background-color: #000000;
+    border-radius: 0vh 0vh 0vh 20vh;
+}
+
+
+@media (max-width: 550px) {
+    .hero-box {
+        scale: .5;
+        position: absolute;
+        left: calc(50% - 30vh);
+    }
+
+    .box {
+        width: 100vh;
+        margin-left: 10vh;
+    }
+}
